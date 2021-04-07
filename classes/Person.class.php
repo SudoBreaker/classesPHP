@@ -21,9 +21,20 @@ class Person {
         return $this->name;
     }
 
+    public function setAge(int $Age){
+        $this->age = $age;
+    }
+
     public function getAge(){
         return $this->age;
     }
 
+    public function seteyeColor(int $eyeColor){
+        $this->eyeColor = $eyeColor;
+    }
 
+    public function geteyeColor(){
+        return $this->eyeColor;
+    }
+    
 }
