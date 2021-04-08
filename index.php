@@ -10,15 +10,17 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    try{
-       $person = new Person("linc","Brown", 23);
-       $person->setName(1);
-       echo $person->getName();
-    }catch(typeError $e){
-        echo "Error: ".$e->getMessage();
-    }
-       
-    ?> 
+    <form action="includes/calc.inc.php" method="post">
+    <p>Simple Calculator</p>
+    <input type="text" name="num1" placeholder="num1">
+    <select name="oper">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="div">Divide</option>
+        <option value="mul">Multiply</option>
+    </select>
+    <input type="text" name="num2" placeholder="num2">
+    <button type="submit" name="submit">Calculate</button>
+    </form> 
 </body>
 </html>
